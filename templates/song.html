@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="container">
+        <h1>Recommendations:</h1>
+
+        {% for i in songs %}
+        <p> Song name: {{i[0]}}  Singer: {{i[1]}} </p>
+        <br>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
